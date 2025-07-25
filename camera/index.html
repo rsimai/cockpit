@@ -23,7 +23,7 @@
         <div class="form-row" style="margin-bottom: 1em; display: flex; align-items: center; gap: 1.5em;">
             <div class="form-group">
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="camera-toggle" checked>
+                    <input class="form-check-input" type="checkbox" id="camera-toggle">
                     <label class="form-check-label" for="camera-toggle">Camera On/Off</label>
                 </div>
             </div>
@@ -31,11 +31,10 @@
                 <label for="resolution-select">Select Resolution:</label>
                 <select id="resolution-select" class="form-control" style="width: auto; display: inline-block;">
                     <option value="default">Default</option>
-                    <option value="640x480">640x480 (VGA)</option>
-                    <option value="1280x720">1280x720 (HD)</option>
-                    <option value="1920x1080">1920x1080 (Full HD)</option>
-                    <option value="3840x2160">3840x2160 (4K)</option>
                 </select>
+            </div>
+            <div class="form-group">
+                <button id="snapshot-button" class="btn btn-primary" disabled>Take Snapshot</button>
             </div>
         </div>
         <video id="webcam" autoplay playsinline></video>
