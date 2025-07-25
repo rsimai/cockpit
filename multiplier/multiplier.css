@@ -29,3 +29,11 @@ body {
     border-color: var(--input-border-color);
 }
 
+.margin-bottom-100 {
+    margin-bottom: 50px;
+}
+
+#product {
+    font-size: 2em; /* Make the number twice as big */
+    text-decoration: underline; /* Underline the number */
+}

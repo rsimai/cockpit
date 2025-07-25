@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const product = num1 * num2;
 
         // Display the result
-        resultParagraph.textContent = `The product of ${num1} and ${num2} is: ${product}`;
+        resultParagraph.innerHTML = `The product of ${num1} and ${num2} is: <span id="product">${product}</span>`;
     }
 
     // Add a click event listener to the button
@@ -25,5 +25,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Send a "ready" message to Cockpit
 cockpit.ready();
-
-
