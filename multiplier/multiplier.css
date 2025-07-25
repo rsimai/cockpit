@@ -1,0 +1,31 @@
+/* Define color variables for light and dark themes */
+:root {
+    --bg-color: #fff;
+    --text-color: #333;
+    --input-bg-color: #fff;
+    --input-text-color: #333;
+    --input-border-color: #ccc;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #222;
+        --text-color: #eee;
+        --input-bg-color: #444;
+        --input-text-color: #eee;
+        --input-border-color: #666;
+    }
+}
+
+/* Apply the theme colors */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.form-control {
+    background-color: var(--input-bg-color);
+    color: var(--input-text-color);
+    border-color: var(--input-border-color);
+}
+

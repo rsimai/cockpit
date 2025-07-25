@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Number Multiplier</title>
+    <!-- Include the Cockpit base CSS for consistent styling -->
+    <link href="/cockpit/static/base1.css" type="text/css" rel="stylesheet">
+    <!-- Link to your application's custom stylesheet -->
+    <link href="multiplier.css" type="text/css" rel="stylesheet">
+    <!-- Include the Cockpit JavaScript API -->
+    <script src="/cockpit/static/cockpit.js"></script>
+</head>
+<body>
+
+<!-- Main container with some padding -->
+<div class="container-fluid">
+    <h1>Number Multiplier</h1>
+    <p>Enter two numbers and press the button to see their product.</p>
+
+    <!-- Form group for the first number -->
+    <div class="form-group">
+        <label for="number1">Number 1</label>
+        <input type="number" id="number1" class="form-control" value="0">
+    </div>
+
+    <!-- Form group for the second number -->
+    <div class="form-group">
+        <label for="number2">Number 2</label>
+        <input type="number" id="number2" class="form-control" value="0">
+    </div>
+
+    <!-- Button to trigger the calculation -->
+    <button id="calculateBtn" class="btn btn-primary">Calculate Product</button>
+
+    <hr>
+
+    <!-- Area to display the result -->
+    <h2>Result</h2>
+    <p id="result" class="lead">The product will be displayed here.</p>
+</div>
+
+<!-- Link to your application's JavaScript file -->
+<script src="multiplier.js"></script>
+
+</body>
+</html>
+
